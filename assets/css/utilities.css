@@ -29,6 +29,7 @@
 .btn {
     padding: 1.5rem 3rem ;
     border-radius: 5rem;
+    border: none;
     color: var(--text);
     font-family: var(--ff-montserrat);
     background-color: var(--snitap-sun);
@@ -56,6 +57,15 @@
 
 .shopping:hover {
     transform: rotate(-25deg);
+}
+
+.scale {
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+.scale:hover {
+    transform: scale(1.05);
 }
 
 @media (min-width: 64rem ) {

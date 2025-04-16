@@ -1,0 +1,165 @@
+.hero {
+  padding: 1rem 0 3rem 0;
+  gap: 2rem;
+
+  & .hero-title-box {
+    gap: 3rem;
+
+    h1 {
+      font-family: var(--ff-syne);
+      font-size: var(--fs-lg);
+
+      div {
+        display: inline-block;
+        height: 2.5rem;
+        width: min-content;
+        overflow: hidden;
+        vertical-align: bottom;
+      }
+
+      & span:nth-child(1),
+      & span:nth-child(4) {
+        color: var(--snitap-sky-mid);
+      }
+
+      & span:nth-child(2) {
+        color: var(--snitap-leaf-mid);
+      }
+
+      & span:nth-child(3) {
+        color: var(--snitap-joy-mid);
+      }
+
+      span  {
+        display: block;
+        animation: slideUp 6s ease infinite;
+      }
+    }
+
+    & .hero-box-btn {
+      gap: 1.5rem;
+      a {
+        gap: 0.75rem;
+        text-transform: uppercase;
+        width: fit-content;
+        img {
+          width: 1.5rem;
+        }
+      }
+      .btn-video {
+        .play {
+          padding: 1.5rem;
+          border-radius: 50%;
+          box-shadow: 0px 57px 16px 0px rgba(0, 0, 0, 0),
+            0px 36px 15px 0px rgba(0, 0, 0, 0.01),
+            0px 20px 12px 0px rgba(0, 0, 0, 0.05),
+            0px 9px 9px 0px rgba(0, 0, 0, 0.09),
+            0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .hero-box-img {
+    position: relative;
+    max-width: 19.5rem;
+
+    .img-elipse {
+      position: absolute;
+      z-index: -1;
+      width: 98%;
+    }
+
+    .img-stars01 {
+      position: absolute;
+      width: 3.50325rem;
+      top: 100px;
+      left: -5px;
+    }
+
+    .img-stars02 {
+      position: absolute;
+      width: 1.59838rem;
+      height: 2.39756rem;
+      right: 0px;
+      bottom: 90px;
+    }
+
+    .img-pattins {
+      animation: move 1s ease-in-out;
+      
+    }
+
+   
+
+}
+}
+
+@keyframes slideUp {
+/* radical */
+0%, 22% {
+    transform: translateY(0);
+}
+
+23% {
+    transform: translateY(calc(-2.5rem - 15px));
+}
+
+25% {
+    transform: translateY(calc(-2.5rem + 10px));
+}
+
+27% {
+    transform: translateY(calc(-2.5rem - 5px));
+}
+
+29% {
+    transform: translateY(calc(-2.5rem + 5px));
+}
+/* saudável */
+33%, 55% {
+    transform: translateY(-2.5rem);
+}
+
+56% {
+    transform: translateY(calc(-5rem - 15px));
+}
+
+58% {
+    transform: translateY(calc(-5rem + 10px));
+}
+
+60% {
+    transform: translateY(calc(-5rem - 5px));
+}
+
+62% {
+    transform: translateY(calc(-5rem + 5px));
+}
+
+/* divertida */
+66%, 88% {
+    transform: translateY(-5rem);
+}
+
+90% {
+    transform: translateY(calc(-7.5rem - 15px));
+}
+
+92% {
+    transform: translateY(calc(-7.5rem + 10px));
+}
+
+94% {
+    transform: translateY(calc(-7.5rem - 5px));
+}
+
+96% {
+    transform: translateY(calc(-7.5rem + 5px));
+}
+/* radical */
+100% {
+    transform: translateY(-7.5rem);
+}
+
+}
