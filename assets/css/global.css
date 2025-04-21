@@ -9,8 +9,8 @@
   --snitap-sky-mid: #06b6d4;
   --snitap-sky-light: #67e8f9;
   --snitap-joy-mid: #db2777;
-  --snitap-joy-light: #F472B6;
-  --snitap-leaf-mid: #16A34A;
+  --snitap-joy-light: #f472b6;
+  --snitap-leaf-mid: #16a34a;
   --text: #000000;
   --highlights: #000000;
   --background: #fafafa;
@@ -22,25 +22,34 @@
   --fs-base: 1rem;
   --fs-md: 1.5rem;
   --fs-lg: 2rem;
+
+  /* tamanhos para keyframes sçlideUp */
+  --stage-1: -2.5rem;
+  --stage-2: -5rem;
+  --stage-3: -7.5rem;
 }
 
 a {
-    text-decoration: none;
-    color: var(--text);
+  text-decoration: none;
+  color: var(--text);
 }
 
 ul[role="list"] li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 64rem) {
   :root {
     --fs-sm: 0.875rem;
-    --fs-md: 2.5rem
+    --fs-md: 2.5rem;
     --fs-lg: 4rem;
+
+    --stage-1: -5rem;
+    --stage-2: -10rem;
+    --stage-3: -15rem;
   }
 }
